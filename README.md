@@ -69,7 +69,7 @@ Allow uers the ability to create a profile and share locations/businesses that a
 
 
 
-https://whimsical.com/chargepoint-CDz95W7KyeG4i7tELAoW4A
+
 
 !https://www.figma.com/file/0AokfLB3knVn8tpqpY2wqh/Untitled?node-id=5%3A79
 
