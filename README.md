@@ -50,13 +50,10 @@ Allow uers the ability to create a profile and share locations/businesses that a
 ### Libraries and Dependencies
 
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      Ruby        |  |
-|   React Router   | __ |
-| React            | __ |
-|                  | _ |
-|                    | __ |
+|     Library      | Description                               			 |
+| :--------------: | :----------------------------------------- 		 |
+|      Rails       |  software library that extends the Ruby programming language|
+|   React Router   |  collection of navigational components  			 |
 
 <br>
 
@@ -74,7 +71,7 @@ Allow uers the ability to create a profile and share locations/businesses that a
 
 https://whimsical.com/chargepoint-CDz95W7KyeG4i7tELAoW4A
 
-!https://www.figma.com/file/0AokfLB3knVn8tpqpY2wqh/Untitled?node-id=1%3A2
+!https://www.figma.com/file/0AokfLB3knVn8tpqpY2wqh/Untitled?node-id=5%3A79
 
 - Desktop Hero
 
@@ -96,7 +93,7 @@ https://whimsical.com/chargepoint-CDz95W7KyeG4i7tELAoW4A
 
 #### Component Tree
 
-<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/WjnMJVcyw63HDFBmWKu1JG"></iframe>
+https://whimsical.com/chargepoint-WjnMJVcyw63HDFBmWKu1JG
 
 
 https://whimsical.com/chargepoint-WjnMJVcyw63HDFBmWKu1JG
@@ -150,16 +147,15 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Intial planning     |    H     |     3 hrs      |     TBD       |     TBD    |
-| BACKEND Setup       |    H     |     3 hrs      |     TBD       |     TBD     |
-| Front End Setup     |    H      |    3 hrs      |     TBD       |     TBD     |
-| Forms               |    L     |     3 hrs      |     TBD       |     TBD      |
+| Intial planning     |    H     |     3 hrs      |     TBD       |     TBD     |
+| BACKEND Setup       |    H     |     4 hrs      |     TBD       |     TBD     |
+| Front End Setup     |    H     |     4 hrs      |     TBD       |     TBD     |
+| Forms               |    L     |     6 hrs      |     TBD       |     TBD     |
 | Posts component     |    H     |     3 hrs      |     TBD       |     TBD     |
-| UserModel                H           3 hrs      |     TBD       |     TBD     |
-| Location Model      |    H     |     3 hrs      |     TBD       |     TBD    |
-| Favorite Model      |    H     |     3 hrs      |     TBD       |     TBD     |
+| UserModel           |     H    |     3 hrs      |     TBD       |     TBD     |
+| Location Model      |    H     |     3 hrs      |     TBD       |     TBD     |
 | CSS                 |    H     |     8 hrs      |     TBD       |     TBD     |
-| TOTAL               |          |     32 hrs      |     TBD       |     TBD     |
+| TOTAL               |          |     37 hrs     |     TBD       |     TBD     |
   
 >
 
