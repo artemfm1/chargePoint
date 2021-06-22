@@ -137,7 +137,12 @@ src
       |__ EditPost
 	    |_ EditPost.jsx
 	    |_ EditPost.css
-
+      |__ CreateComment
+	    |_ CreateComment.jsx
+	    |_ CreateComment.css
+      |__ EditComment
+	    |_ EditComment.jsx
+	    |_ EditComment.css
 ```
 
 #### Time Estimates
