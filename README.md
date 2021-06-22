@@ -73,23 +73,21 @@ https://whimsical.com/chargepoint-CDz95W7KyeG4i7tELAoW4A
 
 !https://www.figma.com/file/0AokfLB3knVn8tpqpY2wqh/Untitled?node-id=5%3A79
 
-- Desktop Hero
+- Homepage
 
-![Dummy Link](url)
+![Homepage](https://i.imgur.com/KJpfxPN.png)
 
-- Resource Index
+- Sign up
 
-![Dummy Link](url)
+![signup](https://i.imgur.com/qNmyfhQ.png)
 
-- Resource Show
+- All posts
 
-![Dummy Link](url)
+![Dummy Link](https://i.imgur.com/PScCz7d.png)
 
 - Tablet Resource Index
 
-![Dummy Link](url)
-
-- Mobile Resource Index
+![add comment](https://i.imgur.com/E7VgA5i.png)
 
 #### Component Tree
 
@@ -99,7 +97,7 @@ https://whimsical.com/chargepoint-WjnMJVcyw63HDFBmWKu1JG
 https://whimsical.com/chargepoint-WjnMJVcyw63HDFBmWKu1JG
 #### Component Architecture
 
-]
+
 
 ``` structure
 
