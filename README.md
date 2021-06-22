@@ -1,12 +1,9 @@
-# chargePoint
-And application that allows e-bike users to blog about and share locations in their city that are friendly places to charge their e-bikes
 
 
-# PROJECT 4 README <!-- omit in toc -->
 
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
+
+
+
 
 - [Overview](#overview)
 - [MVP](#mvp)
@@ -27,26 +24,24 @@ And application that allows e-bike users to blog about and share locations in th
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+And application that allows e-bike users to blog about and share locations in their city that are friendly places to charge their e-bikes
 
+
+_**Project Title** # chargePoint
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+Allow uers the ability to create a profile and share locations/businesses that are friendly places to charges. Users will be able to create and edit posts and also favorite most popular locations
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Create a full stack application with full CRUD capability 
+- Allow users with register the ability to read/edit/delete posts
+- create a social network for the urban electric vehical community 
 
 <br>
 
@@ -56,7 +51,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
+|      Ruby        |  |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
 | React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
 |     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
@@ -66,11 +61,17 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ### Client (Front End)
 
+- React.js
+- JavaScript (ES6)
+- HTML5
+- CSS
+
+
 #### Wireframes
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/CDz95W7KyeG4i7tELAoW4A"></iframe>
 
 - Desktop Landing
 
