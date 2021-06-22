@@ -87,7 +87,7 @@ https://whimsical.com/chargepoint-CDz95W7KyeG4i7tELAoW4A
 
 - Tablet Resource Index
 
-![add comment](https://i.imgur.com/E7VgA5i.png)
+![add comment](https://i.imgur.com/JZJXnyl.png)
 
 #### Component Tree
 
