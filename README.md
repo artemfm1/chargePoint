@@ -71,7 +71,7 @@ Allow uers the ability to create a profile and share locations/businesses that a
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/CDz95W7KyeG4i7tELAoW4A"></iframe>
+https://whimsical.com/chargepoint-CDz95W7KyeG4i7tELAoW4A
 
 ![Dummy Link](url)
 
