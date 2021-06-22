@@ -74,7 +74,7 @@ Allow uers the ability to create a profile and share locations/businesses that a
 
 https://whimsical.com/chargepoint-CDz95W7KyeG4i7tELAoW4A
 
-![Dummy Link](url)
+!https://www.figma.com/file/0AokfLB3knVn8tpqpY2wqh/Untitled?node-id=1%3A2
 
 - Desktop Hero
 
