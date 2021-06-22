@@ -177,9 +177,9 @@ src
 
 ## Post-MVP
 
-> Allow locations to be searched on a map. 
-> Allow Business owners ablity to create corproate accounts and incentivize app users to their locations.
->  
+- Allow locations to be searched on a map. 
+- Allow Business owners ablity to create corproate accounts and incentivize app users to their locations.
+  
 
 
 
