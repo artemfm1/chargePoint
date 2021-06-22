@@ -24,10 +24,12 @@
 
 ## Overview
 
-And application that allows e-bike users to blog about and share locations in their city that are friendly places to charge their e-bikes
+**Project Title** # chargePoint
+
+This is an application that will allow e-bike users to the ablity blog about and share locations in their city that are friendly places to charge their e-bikes. Range anxiety is a real issue for any user of electirc vehicles. This application will create a community that will bridge the gap between bsines owners and their customers that ride ebikes. Users will be able to add their own locations and edit posts they make. User will also be able to search other posts by zip code. 
 
 
-_**Project Title** # chargePoint
+
 
 <br>
 
@@ -52,10 +54,10 @@ Allow uers the ability to create a profile and share locations/businesses that a
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      Ruby        |  |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|   React Router   | __ |
+| React            | __ |
+|                  | _ |
+|                    | __ |
 
 <br>
 
@@ -95,25 +97,46 @@ https://whimsical.com/chargepoint-CDz95W7KyeG4i7tELAoW4A
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
+<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/WjnMJVcyw63HDFBmWKu1JG"></iframe>
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
+https://whimsical.com/chargepoint-WjnMJVcyw63HDFBmWKu1JG
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+]
 
 ``` structure
 
+
 src
 |__ assets/
-      |__ fonts
-      |__ graphics
       |__ images
-      |__ mockups
+      |__ fonts
 |__ components/
-      |__ Header.jsx
-|__ services/
+      |__ Layout
+	    |_ Layout.jsx
+	    |_ Layout.css
+      |__ Nav
+	    |_ Nav.jsx
+	    |_ Nav.css
+      |__ Footer
+	    |_ Footer.jsx
+	    |_ Footer.css
+      |__ Home
+	    |_ Home.jsx
+	    |_ Home.css
+      |__ Login
+	    |_ Login.jsx
+	    |_ Login.css
+      |__ Register
+	    |_ Register.jsx
+	    |_ Register.css
+      |__ CreatePost
+	    |_ CreatePost.jsx
+	    |_ CreatePost.css
+      |__ EditPost
+	    |_ EditPost.jsx
+	    |_ EditPost.css
 
 ```
 
@@ -123,11 +146,18 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| Intial planning     |    H     |     3 hrs      |     TBD       |     TBD    |
+| BACKEND Setup       |    H     |     3 hrs      |     TBD       |     TBD     |
+| Front End Setup     |    H      |    3 hrs      |     TBD       |     TBD     |
+| Forms               |    L     |     3 hrs      |     TBD       |     TBD      |
+| Posts component     |    H     |     3 hrs      |     TBD       |     TBD     |
+| UserModel                H           3 hrs      |     TBD       |     TBD     |
+| Location Model      |    H     |     3 hrs      |     TBD       |     TBD    |
+| Favorite Model      |    H     |     3 hrs      |     TBD       |     TBD     |
+| CSS                 |    H     |     8 hrs      |     TBD       |     TBD     |
+| TOTAL               |          |     32 hrs      |     TBD       |     TBD     |
+  
+>
 
 <br>
 
@@ -135,16 +165,19 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+> https://drive.google.com/file/d/1Wc5rXon1BewMPtvwbObvLxzOn8prikyu/view?usp=sharing
 
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
 <br>
 
 ***
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+> Allow locations to be searched on a map. 
+> Allow Business owners ablity to create corproate accounts and incentivize app users to their locations.
+>  
+
+
 
 ***
 
