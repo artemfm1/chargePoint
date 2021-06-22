@@ -83,15 +83,13 @@ https://whimsical.com/chargepoint-CDz95W7KyeG4i7tELAoW4A
 
 - All posts
 
-![Dummy Link](https://i.imgur.com/PScCz7d.png)
+![All](https://i.imgur.com/PScCz7d.png)
 
-- Tablet Resource Index
+- add comment
 
 ![add comment](https://i.imgur.com/JZJXnyl.png)
 
 #### Component Tree
-
-https://whimsical.com/chargepoint-WjnMJVcyw63HDFBmWKu1JG
 
 
 https://whimsical.com/chargepoint-WjnMJVcyw63HDFBmWKu1JG
