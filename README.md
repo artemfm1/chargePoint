@@ -26,7 +26,7 @@
 
 **Project Title** # chargePoint
 
-This is an application that will allow e-bike users to the ablity blog about and share locations in their city that are friendly places to charge their e-bikes. Range anxiety is a real issue for any user of electirc vehicles. This application will create a community that will bridge the gap between bsines owners and their customers that ride ebikes. Users will be able to add their own locations and edit posts they make. User will also be able to search other posts by zip code. 
+This is an application that will allow e-bike users to the ablity blog about and share locations in their city that are friendly places to charge their e-bikes. Range anxiety is a real issue for any user of electirc vehicles. This application will create a community that will bridge the gap between business owners and their customers that ride ebikes. Users will be able to add their own locations and edit posts they make. User will also be able to search other posts by zip code. 
 
 
 
