@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :update, :destroy]
+  before_action :set_post, only: [:show, :update, :destroy, :add_comment]
   before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /posts
@@ -39,6 +39,13 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   def destroy
     @post.destroy
+  end
+
+  def add_comment
+  @comment = Comment.find(params[:comment_id])
+
+  @post.comments << @comment
+  render json: @post, include: :comments
   end
 
   private
