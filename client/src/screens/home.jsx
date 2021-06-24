@@ -48,7 +48,7 @@ export default function Home(props) {
 				/>
 			</label>
 			
-			<Link to='/register'>Register</Link>
+			<p>not a member?</p><Link to='/register'>Register</Link>
 			<button>Submit</button>
 		</form>
     

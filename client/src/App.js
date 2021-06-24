@@ -1,15 +1,15 @@
 import './App.css';
 import Layout from './layouts/Layout';
-import {Switch, Route, useHistory} from 'react-router-dom'
+import {Switch, Route, useHistory, Redirect} from 'react-router-dom'
 import Home from './screens/Home'
 import Register from './screens/Register'
-import { loginUser, registerUser, verifyUser,  } from './services/auth'
+import { loginUser, registerUser, verifyUser, removeToken } from './services/auth'
 import { useState, useEffect } from 'react';
 
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
-  //const history = useHistory();
+  const history = useHistory();
 
   useEffect(() => {
 		const handleVerify = async () => {
@@ -22,25 +22,35 @@ function App() {
   const handleLogin = async (formData) => {
 		const userData = await loginUser(formData);
 		setCurrentUser(userData);
-		//history.push('/');
+		history.push('/');
   };
   
   const handleRegister = async (formData) => {
 		const userData = await registerUser(formData);
 		setCurrentUser(userData);
-		//history.push('/');
+		history.push('/');
+  };
+  
+  const handleLogout = () => {
+		setCurrentUser(null);
+		localStorage.removeItem('authToken');
+		removeToken();
 	};
 
 
   return (
     <div className="App">
+      
       <Layout>
         <Switch>
-        <Home handleLogin={handleLogin}>
-          </Home>
+
           <Route exact path='/register'>
             <Register handleRegister={handleRegister} />
-              </Route>
+          </Route>
+          {!currentUser && <Redirect to = '/login' />}
+          <Route path = '/login' >
+            <Home handleLogin={handleLogin} />
+          </Route>
           
         </Switch>
 
