@@ -1,15 +1,47 @@
 import './App.css';
 import Layout from './layouts/Layout';
-import {Switch, Route} from 'react-router-dom'
+import {Switch, Route, useHistory} from 'react-router-dom'
+import Home from './screens/Home'
+import Register from './screens/Register'
+import { loginUser, registerUser, verifyUser,  } from './services/auth'
+import { useState, useEffect } from 'react';
+
 
 function App() {
+  const [currentUser, setCurrentUser] = useState(null)
+  //const history = useHistory();
+
+  useEffect(() => {
+		const handleVerify = async () => {
+			const userData = await verifyUser();
+			setCurrentUser(userData);
+		};
+		handleVerify();
+	}, []);
+
+  const handleLogin = async (formData) => {
+		const userData = await loginUser(formData);
+		setCurrentUser(userData);
+		//history.push('/');
+  };
+  
+  const handleRegister = async (formData) => {
+		const userData = await registerUser(formData);
+		setCurrentUser(userData);
+		//history.push('/');
+	};
+
+
   return (
     <div className="App">
       <Layout>
         <Switch>
-          <Route path='/login'>
-            <h3>login</h3>
-          </Route>
+        <Home handleLogin={handleLogin}>
+          </Home>
+          <Route exact path='/register'>
+            <Register handleRegister={handleRegister} />
+              </Route>
+          
         </Switch>
 
       </Layout>
