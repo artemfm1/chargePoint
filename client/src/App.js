@@ -41,15 +41,17 @@ function App() {
   return (
     <div className="App">
       
-      <Layout>
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
 
           <Route exact path='/register'>
             <Register handleRegister={handleRegister} />
           </Route>
-          {!currentUser && <Redirect to = '/login' />}
-          <Route path = '/login' >
+          <Route path='/login'>
             <Home handleLogin={handleLogin} />
+          </Route>
+          <Route path='/' >
+            {!currentUser ? <Redirect to = '/login' /> : <div>all posts</div>}
           </Route>
           
         </Switch>

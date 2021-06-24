@@ -7,7 +7,7 @@ export default function Home(props) {
     username: '',
     password: '',
   })
-  const { username, password } = formData;
+  const { username, password  } = formData;
 	const { handleLogin } = props;
 
 	const handleChange = (e) => {
