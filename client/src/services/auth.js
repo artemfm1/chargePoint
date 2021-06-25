@@ -18,7 +18,8 @@ export const verifyUser = async () => {
 	const token = localStorage.getItem('authToken');
 	if (token) {
 		api.defaults.headers.common.authorization = `Bearer ${token}`;
-		const resp = await api.get('/auth/verify');
+    const resp = await api.get('/auth/verify');
+    console.log(resp.data)
 		return resp.data;
 	}
 	return null;

@@ -25,13 +25,13 @@ import { getAllComments, postComment, putComment, deleteComment } from '../servi
       fetchPosts();
     }, []);
 
-    useEffect(() => {
-      const fetchComments = async () => {
-        const commentList = await getAllComments();
-        setComments(commentList);
-      };
-      fetchComments();
-    }, []);
+    // useEffect(() => {
+    //   const fetchComments = async () => {
+    //     const commentList = await getAllComments();
+    //     setComments(commentList);
+    //   };
+    //   fetchComments();
+    // }, []);
 
     // const handleCreate = async (formData) => {
     //   const postItem = await postPost(formData);
@@ -79,21 +79,21 @@ import { getAllComments, postComment, putComment, deleteComment } from '../servi
   return (
     <div>
       <Switch>
-      <Route exact path='/'>
+      <Route path='/posts'>
 					<Posts posts={posts} />
 				</Route>
       <Route path='/posts/:id'>
           <PostDetails posts={posts} comments={comments}
             handleCreate={handleCreate }/>
 				</Route>
-      <Route path='/comments/:id'>
+      {/* <Route path='/comments/:id'>
           <CommentDetail comments={comments}
             handleDelete={handleDelete}
             handleUpdate={ handleUpdate}/>
 				</Route>
-      <Route path='/comments/:id/edit'>
-					<EditComment comments={comments} />
-				</Route>
+      <Route path='/comments/:id/edit'> 
+					{/* <EditComment comments={comments} /> 
+				{/* </Route> */}
       </Switch>
     
     </div>

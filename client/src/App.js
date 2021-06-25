@@ -14,8 +14,15 @@ function App() {
 
   useEffect(() => {
 		const handleVerify = async () => {
-			const userData = await verifyUser();
-			setCurrentUser(userData);
+      const userData = await verifyUser();
+      if (userData) {
+        setCurrentUser(userData);
+      }
+      else {
+        history.push('/login')
+      }
+      
+      
 		};
 		handleVerify();
 	}, []);
@@ -23,7 +30,7 @@ function App() {
   const handleLogin = async (formData) => {
 		const userData = await loginUser(formData);
 		setCurrentUser(userData);
-		history.push('/');
+		history.push('/posts');
   };
   
   const handleRegister = async (formData) => {
@@ -51,8 +58,9 @@ function App() {
           <Route path='/login'>
             <Home handleLogin={handleLogin} />
           </Route>
-          <Route path='/' >
-            {!currentUser ? <Redirect to = '/login' /> :<MainContainer/>}
+          <Route path='/posts' >
+           <MainContainer />
+         
           </Route>
 
           

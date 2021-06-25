@@ -8,8 +8,16 @@ import getOnePost from '../services/posts'
 export default function PostDetails(props) {
   const [postItem, setPostItem] = useState(null);
 	const [commentId, setCommentId] = useState('');
-	const { comments } = props;
-	const { id } = useParams();
+	const { post } = props;
+  const { id } = useParams();
+  
+
+  useEffect(() => {
+    console.log(post)
+    if (post) {
+      setPostItem(post)
+    }
+  }, [])
 
 	// useEffect(() => {
 	// 	const fetchPostItem = async () => {
