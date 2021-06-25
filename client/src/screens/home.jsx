@@ -37,7 +37,7 @@ export default function Home(props) {
 					onChange={handleChange}
 				/>
 			</label>
-			
+			<br></br>
 			<label>
 				Password:
 				<input

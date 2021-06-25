@@ -5,6 +5,7 @@ import Home from './screens/Home'
 import Register from './screens/Register'
 import { loginUser, registerUser, verifyUser, removeToken } from './services/auth'
 import { useState, useEffect } from 'react';
+import MainContainer from './containers/MainContainer';
 
 
 function App() {
@@ -51,8 +52,9 @@ function App() {
             <Home handleLogin={handleLogin} />
           </Route>
           <Route path='/' >
-            {!currentUser ? <Redirect to = '/login' /> : <div>all posts</div>}
+            {!currentUser ? <Redirect to = '/login' /> :<MainContainer/>}
           </Route>
+
           
         </Switch>
 
