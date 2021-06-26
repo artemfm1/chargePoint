@@ -7,9 +7,10 @@ export default function Posts(props) {
 
   return (
     <div>
-      <h3>posts</h3>
+  
+    
       {posts.map(post => (
-        <PostDetails post={post}/>
+        <PostDetails key={post.id.count} post={post}/>
         
       ))}
     </div>

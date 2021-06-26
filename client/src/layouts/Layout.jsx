@@ -1,12 +1,15 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import Footer from '../components/Footer/Footer'
+import Nav from '../components/Nav/Nav'
 
 export default function Layout(props) {
   const { currentUser, handleLogout, children } = props;
   return (
     <div>
+      <Nav />
       <header>
-        <h1>chargePoint</h1>
+       
         {currentUser ? (
 					<>
 						<p>{currentUser.username}</p>
@@ -19,6 +22,7 @@ export default function Layout(props) {
         
         </header>
       {children}
+<Footer />
     </div>
   )
 }

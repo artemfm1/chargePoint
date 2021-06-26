@@ -79,12 +79,13 @@ import { getAllComments, postComment, putComment, deleteComment } from '../servi
   return (
     <div>
       <Switch>
-      <Route path='/posts'>
-					<Posts posts={posts} />
-				</Route>
+      
       <Route path='/posts/:id'>
           <PostDetails posts={posts} comments={comments}
             handleCreate={handleCreate }/>
+        </Route>
+        <Route path='/posts'>
+					<Posts posts={posts} />
 				</Route>
       {/* <Route path='/comments/:id'>
           <CommentDetail comments={comments}

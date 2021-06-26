@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
 
-    render json: @posts
+    render json: @posts, include: :comments
   end
 
   # GET /posts/1
@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     @post.user = @current_user
 
     if @post.save
-      render json: @post, include: :comments  status: :created
+      render json: @post, status: :created
     else
       render json: @post.errors, status: :unprocessable_entity
     end

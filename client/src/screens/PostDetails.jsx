@@ -39,11 +39,15 @@ export default function PostDetails(props) {
 
 
 	return (
-		<div>
-			<h3>{postItem?.name}</h3>
-			{postItem?.comment.map((comment) => (
-				<p key={comment.id}>{comment.name}</p>
-      ))}
+    <div>
+      <Link to ='/comment-detail'>
+        <h3>{post?.description}</h3>
+        </Link>
+      <h3>{post?.location}</h3>
+     
+			{/* {post?.comments.map((comment) => (
+				<p key={comment.id}>{comment.content}</p>
+      ))} */}
       
 
 		</div>

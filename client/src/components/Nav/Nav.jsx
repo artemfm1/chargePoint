@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import { NavLink, Link } from 'react-router-dom';
 
 
 const authenticatedOptions = (
@@ -19,7 +20,8 @@ const Nav = ({ user }) => {
 
   return (
     <div>
-      {currentUser && authenticatedOptions}
+       <Link to ='/posts'>chargePoint</Link>
+      {/* {currentUser && authenticatedOptions} */}
     </div>
   );
 };

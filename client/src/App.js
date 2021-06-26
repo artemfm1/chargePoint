@@ -62,6 +62,9 @@ function App() {
            <MainContainer />
          
           </Route>
+          <Route path ='/comment-detail'>
+
+          </Route>
 
           
         </Switch>
