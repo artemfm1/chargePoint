@@ -1,5 +1,5 @@
 import React from 'react'
-import PostDetails from './PostDetails'
+import Post from '../Post/Post'
 import { useEffect } from 'react';
 
 export default function Posts(props) {
@@ -7,10 +7,10 @@ export default function Posts(props) {
 
   return (
     <div>
-  
+      
     
       {posts.map(post => (
-        <PostDetails key={post.id.count} post={post}/>
+        <Post key={post.id.count} post={post}/>
         
       ))}
     </div>

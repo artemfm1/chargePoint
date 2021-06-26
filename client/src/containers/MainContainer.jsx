@@ -1,11 +1,12 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
-import PostDetails from '../screens/PostDetails'
-import EditComment from '../screens/EditComment'
-import CommentDetail from '../screens/CommentDetail'
+import Post from '../screens/Post/Post'
+import EditComment from '../screens/EditComment/EditComment'
+import PostDetail from '../screens/PostDetail/PostDetail'
+import CommentDetail from '../screens/CommentDetail/CommentDetail';
 
-import Posts from '../screens/Posts'
+import Posts from '../screens/Posts/Posts'
 
 // Services
 import { getAllPosts, postPost, putPost, deletePost, addComment } from '../services/posts';
@@ -25,13 +26,13 @@ import { getAllComments, postComment, putComment, deleteComment } from '../servi
       fetchPosts();
     }, []);
 
-    // useEffect(() => {
-    //   const fetchComments = async () => {
-    //     const commentList = await getAllComments();
-    //     setComments(commentList);
-    //   };
-    //   fetchComments();
-    // }, []);
+    useEffect(() => {
+      const fetchComments = async () => {
+        const commentList = await getAllComments();
+        setComments(commentList);
+      };
+      fetchComments();
+    }, []);
 
     // const handleCreate = async (formData) => {
     //   const postItem = await postPost(formData);
@@ -81,18 +82,23 @@ import { getAllComments, postComment, putComment, deleteComment } from '../servi
       <Switch>
       
       <Route path='/posts/:id'>
-          <PostDetails posts={posts} comments={comments}
+          <Post posts={posts} 
             handleCreate={handleCreate }/>
+        </Route>
+        
+       <Route path='/:post_id/comment/:id'>
+          <CommentDetail posts={posts}
+            handleDelete={handleDelete}
+            handleUpdate={ handleUpdate}/>
         </Route>
         <Route path='/posts'>
 					<Posts posts={posts} />
-				</Route>
-      {/* <Route path='/comments/:id'>
-          <CommentDetail comments={comments}
-            handleDelete={handleDelete}
-            handleUpdate={ handleUpdate}/>
-				</Route>
-      <Route path='/comments/:id/edit'> 
+        </Route>
+        <Route path='/post-detail/:id'>
+            <PostDetail  posts={posts}/>
+
+          </Route>
+      {/* <Route path='/comments/:id/edit'>  */}
 					{/* <EditComment comments={comments} /> 
 				{/* </Route> */}
       </Switch>

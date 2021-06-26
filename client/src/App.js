@@ -1,11 +1,12 @@
 import './App.css';
 import Layout from './layouts/Layout';
 import {Switch, Route, useHistory, Redirect} from 'react-router-dom'
-import Home from './screens/Home'
-import Register from './screens/Register'
+import Home from './screens/Home/Home'
+import Register from './screens/Register/Register'
 import { loginUser, registerUser, verifyUser, removeToken } from './services/auth'
 import { useState, useEffect } from 'react';
 import MainContainer from './containers/MainContainer';
+import CommentDetail from './screens/CommentDetail/CommentDetail'
 
 
 function App() {
@@ -58,13 +59,11 @@ function App() {
           <Route path='/login'>
             <Home handleLogin={handleLogin} />
           </Route>
-          <Route path='/posts' >
-           <MainContainer />
+          <Route path='/' >
+          <MainContainer />
          
           </Route>
-          <Route path ='/comment-detail'>
-
-          </Route>
+         
 
           
         </Switch>

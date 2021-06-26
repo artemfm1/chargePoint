@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-import Layout from "../layouts/Layout"
+import Layout from "../../layouts/Layout"
 import { useParams, Link } from "react-router-dom";
-import getOnePost from '../services/posts'
+import getOnePost from '../../services/posts'
 
 
-export default function PostDetails(props) {
+export default function Post(props) {
   const [postItem, setPostItem] = useState(null);
 	const [commentId, setCommentId] = useState('');
 	const { post } = props;
@@ -13,7 +13,7 @@ export default function PostDetails(props) {
   
 
   useEffect(() => {
-    console.log(post)
+    //console.log(post)
     if (post) {
       setPostItem(post)
     }
@@ -32,15 +32,14 @@ export default function PostDetails(props) {
 	// 	const postItem = await addComment(id, commentId);
 	// 	setPostItem(postItem);
 	// };
-
+  const comments = post.comments
 
   
 
 
-
 	return (
     <div>
-      <Link to ='/comment-detail'>
+      <Link to={`/post-detail/${post.id}`}>
         <h3>{post?.description}</h3>
         </Link>
       <h3>{post?.location}</h3>
