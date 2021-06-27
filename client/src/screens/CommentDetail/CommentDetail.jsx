@@ -3,12 +3,13 @@ import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
 const CommentDetail = (props) => {
-  const { posts } = props;
+  const { posts, handleDelete, comment } = props;
+  
 
   const { id, post_id } = useParams()
   console.log(post_id)
   const post = posts?.filter(post => {
-     return post.id == post_id
+    return post.id == post_id
   })[0]
   const comments = post?.comments
   const currComment = comments?.filter(comment => {
@@ -20,14 +21,12 @@ const CommentDetail = (props) => {
       <h1>{currComment?.content}</h1>
     
   
-      <Link to >
-        <div>
-         
-          </div>
+      <Link to ={`/${post_id}/comments/${id}/edit`}>
+      <button>Edit</button>
       </Link>
       
-    
- 
+    <button onClick={() => handleDelete(id)}>Delete</button>
+
     </div>
   );
 };

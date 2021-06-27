@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
   
   # GET /comments
   def index
@@ -10,7 +11,7 @@ class CommentsController < ApplicationController
 
   # GET /comments/1
   def show
-    @post = Post.find(params[:post_id])
+    
     render json: @comment 
   
   end
@@ -18,8 +19,8 @@ class CommentsController < ApplicationController
   # POST /comments
   def create
     print params
-    @comment = Comment.new(params)
-    # @comment.user = @current_user
+    @comment = Comment.new(comment_params) 
+    @comment.user = @current_user
     
     
     if @comment.save

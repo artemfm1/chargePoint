@@ -56,14 +56,14 @@ import { getAllComments, postComment, putComment, deleteComment } from '../servi
     //   history.push('/posts');
     // };
 
-    const handleUpdate = async (id, formData) => {
+    const handleUpdate = async (id, formData, post_id) => {
       const commentItem = await putComment(id, formData);
       setComments((prevState) =>
         prevState.map((comment) => {
           return  comment.id === Number(id) ? commentItem : comment;
         })
       );
-      history.push('/posts/:id');
+      history.push(`/${post_id}/comment/${id}`);
     };
 
     // const handleDelete = async (id) => {
@@ -81,7 +81,7 @@ import { getAllComments, postComment, putComment, deleteComment } from '../servi
     <div>
       <Switch>
  
-      <Route path= '/post_id/comment/:id/edit'>
+      <Route path= '/:post_id/comments/:id/edit'>
           <EditComment comments={comments} handleUpdate={handleUpdate}/>
           </Route>
       <Route path='/posts/:id'>

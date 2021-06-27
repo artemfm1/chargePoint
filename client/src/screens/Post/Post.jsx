@@ -32,7 +32,7 @@ export default function Post(props) {
 	// 	const postItem = await addComment(id, commentId);
 	// 	setPostItem(postItem);
 	// };
-  const comments = post.comments
+  //const comments = post.comments
 
   
 
