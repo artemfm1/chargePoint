@@ -1,5 +1,6 @@
 import React from 'react';
-import {useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const CommentDetail = (props) => {
   const { posts } = props;
@@ -17,6 +18,13 @@ const CommentDetail = (props) => {
   return (
     <div>
       <h1>{currComment?.content}</h1>
+    
+  
+      <Link to >
+        <div>
+         
+          </div>
+      </Link>
       
     
  
