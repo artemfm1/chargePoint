@@ -46,7 +46,7 @@ export default function PostDetail(props) {
 
   return (
     <div>
-      <h3>posts w/ comments</h3>
+      
       {comments?.map((comment) => {
         return (
           <Link to={`/${post.id}/comment/${comment.id}`}>

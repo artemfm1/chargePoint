@@ -1,6 +1,6 @@
 import React from 'react'
 import Post from '../Post/Post'
-import './Post.css'
+import './Posts.css'
 
 
 export default function Posts(props) {

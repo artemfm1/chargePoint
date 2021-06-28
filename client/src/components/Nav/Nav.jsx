@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom';
-
+import './Nav.css'
 
 const authenticatedOptions = (
   <>
@@ -19,8 +19,14 @@ const Nav = ({ user }) => {
 
 
   return (
-    <div>
-       <Link to ='/posts'>chargePoint</Link>
+    
+    <div className="nav">
+      
+     
+      
+      <Link to='/posts'>
+      <img src='https://www.chargepoint.com/themes/chargepoint/logo.svg' alt='logo' />
+       </Link>
       {/* {currentUser && authenticatedOptions} */}
     </div>
   );

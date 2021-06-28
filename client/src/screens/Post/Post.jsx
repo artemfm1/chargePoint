@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Layout from "../../layouts/Layout"
 import { useParams, Link } from "react-router-dom";
 import getOnePost from '../../services/posts'
-
+import './Post.css'
 
 export default function Post(props) {
   const [postItem, setPostItem] = useState(null);
@@ -38,12 +38,12 @@ export default function Post(props) {
 
 
 	return (
-    <div>
+    <div className='post'>
       <Link to={`/post-detail/${post.id}`}>
         <h3>{post?.description}</h3>
-        </Link>
+        
       <h3>{post?.location}</h3>
-     
+      </Link>
 			{/* {post?.comments.map((comment) => (
 				<p key={comment.id}>{comment.content}</p>
       ))} */}

@@ -1,0 +1,14 @@
+.user{
+  display: flex;
+
+ border: 1px solid teal;
+  
+
+}
+
+.register{
+  border: 1px solid teal;
+  display: flex;
+  justify-items: right;
+  position: relative;
+}
