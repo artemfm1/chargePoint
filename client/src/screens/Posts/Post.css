@@ -1,13 +1,15 @@
 .post-container{
   border: 2px solid green;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  
 
 }
 
 @media only screen and (max-width: 500px) {
   .post-container{
     display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   }
 }
