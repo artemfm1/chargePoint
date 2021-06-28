@@ -1,15 +1,14 @@
 .post-container{
   border: 2px solid green;
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
   
 
-}
+
 
 @media only screen and (max-width: 500px) {
   .post-container{
-    display: flex;
-  /* flex-direction: column; */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
