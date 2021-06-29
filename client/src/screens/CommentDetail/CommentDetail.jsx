@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom';
+import './CommentDetail.css'
 
 const CommentDetail = (props) => {
   const { posts, handleDelete, comment } = props;
@@ -25,10 +26,10 @@ const CommentDetail = (props) => {
     
   
       <Link to ={`/${post_id}/comments/${id}/edit`}>
-      <button>Edit</button>
+      <button className='btn'>Edit</button>
       </Link>
       
-    <button onClick={() => handleDelete(id)}>Delete</button>
+    <button className='btn'onClick={() => handleDelete(id)}>Delete</button>
 
     </div>
   );
