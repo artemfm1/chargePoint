@@ -1,8 +1,23 @@
-.user{
-  display: flex;
-
- border: 1px solid teal;
+.layout{
   
+}
+
+
+.logout-btn{
+  /* align-items:  right !important ; */
+  margin-left: 1000px;
+
+  border: 1px solid darkmagenta;
+  
+  }
+
+
+.user{
+
+text-align: right !important ;
+margin-right: 40px; 
+/* border: 1px solid teal; */
+
 
 }
 
@@ -12,3 +27,5 @@
   justify-items: right;
   position: relative;
 }
+
+

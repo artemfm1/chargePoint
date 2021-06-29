@@ -9,6 +9,7 @@ import {
 } from "../../services/comments";
 import { addComment } from "../../services/posts";
 import { useParams, Link } from "react-router-dom";
+import './PostDetail.css'
 
 const CommentBox = ({ userId, postId }) => {
   console.log("wtf ->", userId, " ", postId);
@@ -37,24 +38,29 @@ export default function PostDetail(props) {
     return post.id === Number(id);
   })[0];
 
+ 
+
   //console.log(id)
   const comments = post?.comments;
   // const currComment = comments?.filter(comment => {
   //   return comment.id === id
   // })
-  console.log(comments);
+  
 
   return (
-    <div>
+    <div className='comments'>
       
       {comments?.map((comment) => {
         return (
-          <Link to={`/${post.id}/comment/${comment.id}`}>
+          
+          <Link className='reply'to={`/${post.id}/comment/${comment.id}`}>
             {comment.content}
           </Link>
+          
         );
+        
       })}
-      <button onClick={setShowCommentBox}>add comment</button>
+      <button className='add-button' onClick={setShowCommentBox}>add comment</button>
       {showCommentBox && <CommentBox userId={post.user_id} postId={post.id} />}
     </div>
   );

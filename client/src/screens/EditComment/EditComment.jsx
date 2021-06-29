@@ -43,7 +43,7 @@ export default function EditComment(props) {
     <h3>edit</h3>
     <label>
       Content:
-        <input type='text'
+        <textarea type='text'
           name='content'
           value={content}
           onChange={handleChange} />

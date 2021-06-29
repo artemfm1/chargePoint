@@ -7,14 +7,14 @@ import './Layout.css'
 export default function Layout(props) {
   const { currentUser, handleLogout, children } = props;
   return (
-    <div >
+    <div className='layout'>
       <Nav />
       <header>
        
         {currentUser ? (
 					<>
-						<p className="user">welcome, {currentUser.username}</p>
-						<button onClick={handleLogout}>Logout</button>
+						<p className="user">  🔌  welcome, {currentUser.username}</p>
+						<button className="logout-btn"onClick={handleLogout}>Logout</button>
 					</>
 				) : (
 					<Link className='register'to='/login'>Login/Register</Link>
