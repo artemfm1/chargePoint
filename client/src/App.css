@@ -18,6 +18,6 @@ body{
 
 @media only screen and (max-width: 500px) {
   .App{
-    background-color: red;
+    background-color: grey;
   }
 }
