@@ -35,23 +35,11 @@ export default function PostDetail(props) {
 
   const { id } = useParams();
   const post = posts?.filter((post) => {
-    //return post.id === id
+
     return post.id === Number(id);
     
   })[0];
-
-  
-
-
- 
-
-  //console.log(id)
   const comments = post?.comments;
-  // const currComment = comments?.filter(comment => {
-  //   return comment.id === id
-  // })
-  
-
   return (
     <div className='comments'>
       <div className='post-name'>

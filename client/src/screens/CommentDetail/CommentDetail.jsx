@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useHistory } from 'react-router-dom'
+import { useParams, useHistory, Redirect } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import './CommentDetail.css'
 
@@ -16,10 +16,10 @@ const CommentDetail = (props) => {
   const currComment = comments?.filter(comment => {
     return comment.id == id
     
-  })[0]
+  })[0];
   
-
-  console.log(currComment)
+  <Redirect to={`/post-detail/${id}`}/>
+  
   return (
     <div>
       <h1>{currComment?.content}</h1>
@@ -30,7 +30,7 @@ const CommentDetail = (props) => {
       </Link>
       
     <button className='btn'onClick={() => handleDelete(id)}>Delete</button>
-
+    
     </div>
   );
 };

@@ -31,7 +31,7 @@ export default function EditComment(props) {
 			...prevState,
 			[name]: value,
     }));
-    <Redirect to='/posts' />
+    <Redirect to={`/post-detail/${id}`} />
 	};
 
   

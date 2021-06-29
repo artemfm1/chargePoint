@@ -4,10 +4,14 @@ const Footer = () => {
   return (
   <div className="footer-div">
     <footer>
-        <p></p>
+        <p>ⓒArtem Furman</p>
         
-        <a href="https://github.com/artemfm1/chargePoint"><img src="https://cdn.freebiesbug.com/wp-content/uploads/2012/12/github-psd-icon-580x340.jpg" className="git"width="100px"
-      height="100px" alt="git account"></img></a>
+        <a href="https://github.com/artemfm1/chargePoint"><img src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-1.png" className="git"width="50px"
+      height="50px" alt="git account"></img
+        > </a>
+        <a href="https://www.linkedin.com/in/artemfurman/">
+          <img src='https://images.unsplash.com/photo-1611944212129-29977ae1398c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80' width='50px' height='46px'></img>
+        </a>
     </footer>
     </div>
   )
