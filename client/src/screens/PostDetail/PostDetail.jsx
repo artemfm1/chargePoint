@@ -40,6 +40,7 @@ export default function PostDetail(props) {
     
   })[0];
 
+  console.log(post)
 
 
  
@@ -53,7 +54,9 @@ export default function PostDetail(props) {
 
   return (
     <div className='comments'>
-      
+      <div className='post-name'>
+      {post.description}
+      </div>
       {comments?.map((comment) => {
         return (
           

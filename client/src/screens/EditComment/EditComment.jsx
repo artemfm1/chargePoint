@@ -42,7 +42,7 @@ export default function EditComment(props) {
       handleUpdate(id, formData, post_id);
     }}
   >
-    <h3>edit</h3>
+    <h3>edit post</h3>
     <label >
       Content:
         <textarea type='text'
@@ -50,7 +50,7 @@ export default function EditComment(props) {
           value={content}
           onChange={handleChange} />
     </label>
-    <button>Submit</button>
+    <button className='btn'>Submit</button>
   </form>
   )
 }

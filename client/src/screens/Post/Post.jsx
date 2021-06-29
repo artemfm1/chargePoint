@@ -11,7 +11,7 @@ export default function Post(props) {
 	const { post, comments } = props;
   const { id } = useParams();
   
-console.log(post.comments.length)
+//console.log(post.comments.length)
   useEffect(() => {
     //console.log(post)
     if (post) {
