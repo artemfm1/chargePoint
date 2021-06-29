@@ -22,8 +22,10 @@ export default function Home(props) {
 
 
   return (
-    <React.Fragment>
-
+    <React.Fragment >
+      <img className='home' src='https://spy.com/wp-content/uploads/2020/08/best-bike-phone-mount.jpg'
+        width='700px'
+      height='300px'></img>
    
     
       <form className='input-form'
