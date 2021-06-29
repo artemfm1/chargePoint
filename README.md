@@ -178,7 +178,7 @@ src
 ***
 
 ## Code Showcase
-![code](https://imgur.com/vjjl236)
+![code](https://i.imgur.com/vjjl236.png)
 
 
 ## Code Issues & Resolutions
