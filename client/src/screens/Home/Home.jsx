@@ -51,8 +51,13 @@ export default function Home(props) {
 				/>
 			</label>
 			
-			<p>not a member?</p><Link to='/register'>Register</Link>
-			<button className='btn'>Submit</button>
+      <Link to='/register'>not a member? Register</Link>
+      
+        
+      <button className='btn'>Submit</button>
+      <br></br>
+      <input type="checkbox" />
+        <label>Remember Me</label>
 		</form>
     
   )
