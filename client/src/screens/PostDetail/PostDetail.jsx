@@ -8,7 +8,7 @@ import {
   deleteComment,
 } from "../../services/comments";
 import { addComment } from "../../services/posts";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, } from "react-router-dom";
 import './PostDetail.css'
 
 const CommentBox = ({ userId, postId }) => {
@@ -17,11 +17,12 @@ const CommentBox = ({ userId, postId }) => {
 
   return (
     <div>
-      <textarea
+      <textarea className='textarea'
+         rows="20" name="comment[text]" id="comment_text" cols="40" rows='5' class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"
         onChange={(event) => setCommentValue(event.target.value)}
       ></textarea>
-      <button onClick={(event) => addComment({ userId, postId, content })}>
-        Confirm
+      <button className='submit-btn' onClick={(event) => addComment({ userId, postId, content })}>
+        Submit
       </button>
     </div>
   );
@@ -36,7 +37,10 @@ export default function PostDetail(props) {
   const post = posts?.filter((post) => {
     //return post.id === id
     return post.id === Number(id);
+    
   })[0];
+
+
 
  
 

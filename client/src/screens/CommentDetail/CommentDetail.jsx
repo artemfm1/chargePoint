@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
 const CommentDetail = (props) => {
@@ -14,7 +14,10 @@ const CommentDetail = (props) => {
   const comments = post?.comments
   const currComment = comments?.filter(comment => {
     return comment.id == id
+    
   })[0]
+  
+
   console.log(currComment)
   return (
     <div>

@@ -1,8 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Redirect} from 'react';
 import { useParams } from 'react-router-dom';
 import api from '../../services/api-config';
 import { getOneComment } from '../../services/comments';
+import './EditComment.css'
 
 export default function EditComment(props) {
   const [formData, setFormData] = useState({
@@ -29,19 +30,20 @@ export default function EditComment(props) {
 		setFormData((prevState) => ({
 			...prevState,
 			[name]: value,
-		}));
+    }));
+    <Redirect to='/posts' />
 	};
 
   
   return (
-    <form
+    <form className='text-input'
     onSubmit={(e) => {
       e.preventDefault();
       handleUpdate(id, formData, post_id);
     }}
   >
     <h3>edit</h3>
-    <label>
+    <label >
       Content:
         <textarea type='text'
           name='content'
