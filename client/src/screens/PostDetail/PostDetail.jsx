@@ -40,7 +40,7 @@ export default function PostDetail(props) {
     
   })[0];
 
-  console.log(post)
+  
 
 
  

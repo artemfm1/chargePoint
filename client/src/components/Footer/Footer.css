@@ -1,0 +1,14 @@
+
+.footer-div{
+text-align: center;
+font-size: 18px;
+border-top: 2px solid black;
+background-color: #f7b42c;
+background-image: linear-gradient(315deg, #f7b42c 0%, #f7b42f 74%);
+width: 100%;
+bottom: 0;
+margin-top: 500px;
+padding: 5px;
+}
+
+

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
+import { Fragment } from 'react'
 
 export default function Home(props) {
   const [formData, setFormData] = useState({
@@ -21,6 +22,9 @@ export default function Home(props) {
 
 
   return (
+    <React.Fragment>
+
+   
     
       <form className='input-form'
 			onSubmit={(e) => {
@@ -57,8 +61,16 @@ export default function Home(props) {
       <button className='btn'>Submit</button>
       <br></br>
       <input type="checkbox" />
-        <label>Remember Me</label>
-		</form>
+      <label>Remember Me</label>
+    
+    </form>
+    
+      <h1>Use chargePoint to find locations to charge your electric bike 
+    </h1>
+
+    </React.Fragment>
+    
+   
     
   )
 }

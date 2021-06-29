@@ -23,7 +23,7 @@ export default function Layout(props) {
         
         </header>
       {children}
-{/* <Footer /> */}
+ <Footer /> 
     </div>
   )
 }
