@@ -10,29 +10,13 @@ export default function Post(props) {
 	const [commentId, setCommentId] = useState('');
 	const { post, comments } = props;
   const { id } = useParams();
-  
-//console.log(post.comments.length)
+
   useEffect(() => {
-    //console.log(post)
+    
     if (post) {
       setPostItem(post)
     }
   }, [])
-
-	// useEffect(() => {
-	// 	const fetchPostItem = async () => {
-	// 		const postData = await getOnePost(id);
-	// 		setPostItem(postData);
-	// 	};
-	// 	fetchPostItem();
-	// }, [id]);
-
-	// const handleSubmit = async (e) => {
-	// 	e.preventDefault();
-	// 	const postItem = await addComment(id, commentId);
-	// 	setPostItem(postItem);
-	// };
-  //const comments = post.comments
 
   
 
@@ -46,9 +30,7 @@ export default function Post(props) {
 
         <h1>{post.comments.length}  💬  </h1>
       </Link>
-			{/* {post?.comments.map((comment) => (
-				<p key={comment.id}>{comment.content}</p>
-      ))} */}
+		
       
 
 		</div>

@@ -37,14 +37,14 @@
 
 text-align: right !important ;
 margin-right: 40px; 
-/* border: 1px solid teal; */
+
 font-size: 25px;
 
 
 }
 
 .register{
-  border: 1px solid teal;
+  
   display: flex;
   justify-items: right;
   position: relative;

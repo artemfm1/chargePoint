@@ -27,7 +27,7 @@ const Nav = ({ user }) => {
       <Link to='/posts'>
       <img src='https://www.chargepoint.com/themes/chargepoint/logo.svg' alt='logo' />
        </Link>
-      {/* {currentUser && authenticatedOptions} */}
+      
     </div>
   );
 };
